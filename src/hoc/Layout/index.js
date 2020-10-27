@@ -4,8 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles(theme => ({
   root: {
     display: 'flex',
-    flexDirection: 'column',
-    maxWidth: theme.custom.layout.maxAppWidth,
+    justifyContent: 'center'
   },
   main: {
     [theme.breakpoints.down('md')]: {
@@ -14,10 +13,16 @@ const useStyles = makeStyles(theme => ({
     display: 'flex',
     justifyContent: 'center',
     flexGrow: 1,
-    minHeight: `calc(100vh - ${theme.custom.layout.topAppBarHeight}px)`,
-    height: '100vh',
-    padding: theme.spacing(0, 5, 0, 5)
-  }
+    maxWidth: theme.custom.layout.maxAppWidth,
+    minHeight: '100vh',
+    padding: theme.spacing(2),
+    backgroundColor: theme.palette.background.default
+  },
+  mainPanel: {
+    backgroundColor: theme.palette.background.main,
+    width: '100%',
+    minHeight: `calc(100vh - ${theme.custom.layout.topAppBarHeight + theme.custom.layout.footerHeight}px)`,
+  },
 }));
 
 const Layout = ({ children }) => {
@@ -26,7 +31,9 @@ const Layout = ({ children }) => {
   return (
     <div className={classes.root}>
       <main className={classes.main}>
-        {children}
+        <div className={classes.mainPanel}>
+          {children}
+        </div>
       </main>
     </div>
   );

@@ -14,6 +14,10 @@ const theme = responsiveFontSizes(createMuiTheme({
       main: '#fff',
       dark: '#000000',
     },
+    background: {
+      default: "#FFFFFF",
+      main: "#e6ebf4"
+    },
     error: {
       light: '#EE2741',
       main: '#A20F3C',
@@ -21,43 +25,17 @@ const theme = responsiveFontSizes(createMuiTheme({
       contrastText: '#fff'
     },
     text: {
-      primary: '#000000',
-      secondary: '#fff',
+      primary: '#000000'
     },
   },
-  // typography: {
-  //   h3: {
-  //     fontSize: '50px',
-  //   },
-  //   h5: {
-  //     fontSize: '26px',
-  //   },
-  //   h6: {
-  //     fontSize: '21px',
-  //     fontWeight: 300,
-  //   },
-  //   subtitle1: {
-  //     fontSize: '14px',
-  //     fontWeight: 'Bold'
-  //   },
-  //   body1: {
-  //     fontSize: '18px',
-  //     fontStyle: 'Bold'
-  //   },
-  //   body2: {
-  //     fontSize: '13px',
-  //     fontWeight: 300,
-  //   },
-  //   caption: {
-  //     fontSize: '12px'
-  //   },
-  // },
   custom: {
     palette: {
-      border: '#979797'
+      button: '#2a61ff',
+      boxSolid : '#f2f5ff'
     },
     layout: {
       topAppBarHeight: 280,
+      maxAppWidth: 1150,
       footerHeight: 173
     },
   }

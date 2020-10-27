@@ -5,6 +5,7 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import { ThemeProvider } from '@material-ui/core/styles';
 
 import Layout from 'hoc/Layout';
+import UpgradingPlanBoard from './containers/UpgradingPlanBoard';
 import theme from 'styles/theme';
 
 const App = () => {
@@ -13,6 +14,7 @@ const App = () => {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <Layout>
+        <UpgradingPlanBoard />
       </Layout>
     </ThemeProvider>
   )
