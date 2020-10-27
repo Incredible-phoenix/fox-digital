@@ -1,7 +1,6 @@
 
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Typography from '@material-ui/core/Typography';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
@@ -14,7 +13,6 @@ import { paymentDetails } from 'utils/helper/dummy';
 const useStyles = makeStyles(theme => ({
   root: {
     display: 'flex',
-    justifyContent: 'space-between',
     width: '100%',
     height: '100%',
     flexDirection: 'row',

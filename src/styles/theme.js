@@ -30,7 +30,8 @@ const theme = responsiveFontSizes(createMuiTheme({
   },
   custom: {
     palette: {
-      button: '#2a61ff'
+      button: '#2a61ff',
+      boxSolid : '#f2f5ff'
     },
     layout: {
       topAppBarHeight: 280,

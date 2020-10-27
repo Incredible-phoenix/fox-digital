@@ -40,7 +40,7 @@ const useStyles = makeStyles(theme => ({
       border: 'none'
     },
     '&:hover': {
-      border: `1px solid ${props.readOnly ? theme.palette.background.default : '#6B76A1'}`
+      border: `1px solid ${props.readOnly ? theme.palette.background.default : theme.custom.palette.button}`
     }
   }),
   error: {
