@@ -6,6 +6,10 @@ import RightBoard from 'components/UI/RightBoard';
 
 const useStyles = makeStyles(theme => ({
   root: {
+    [theme.breakpoints.down('sm')]: {
+      display: 'flex',
+      flexDirection: 'column',
+    },
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'space-between',

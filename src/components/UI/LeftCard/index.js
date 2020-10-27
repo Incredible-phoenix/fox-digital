@@ -16,11 +16,14 @@ import ArrowIcon from 'components/Icons/ArrowIcon';
 
 const useStyles = makeStyles(theme => ({
   root: {
+    [theme.breakpoints.down('sm')]: {
+      width: '100%',
+    },
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'flex-start',
     borderRadius: 10,
-    width: '55%',
+    width: '57%',
     minHeight: '100%',
     padding: theme.spacing(2)
   },
@@ -44,10 +47,14 @@ const useStyles = makeStyles(theme => ({
     alignItems: 'center',
     border: '0.5px solid blue',
     padding: theme.spacing(1.5),
-    borderRadius: theme.spacing(.5)
+    borderRadius: theme.spacing(.5),
+    backgroundColor: theme.custom.palette.boxSolid
   },
   leftSection: {
-    width: '50%',
+    [theme.breakpoints.down('xs')]: {
+      width: '55%',
+    },
+    width: '45%',
     display: 'flex',
     justifyContent: 'space-between',
     flexDirection: 'row'
@@ -82,7 +89,7 @@ const useStyles = makeStyles(theme => ({
   textField: {
     height: '32%'
   },
-  button: {
+  procceedButton: {
     display: 'flex',
     justifyContent: 'center',
     width: '100%',
@@ -137,7 +144,7 @@ const LeftCard = () => {
       </CardContent>
       <CardActions className={classes.footerSection}>
         <OutlinedTextField className={classes.textField} width={20} placeholder='Email address' />
-        <ContainedButton className={classes.button} >
+        <ContainedButton className={classes.procceedButton} >
           <Typography variant='h6' size='medium'>Procceed to payment </Typography>
           <ArrowIcon className={classes.arrowIcon} />
         </ContainedButton>

@@ -14,9 +14,8 @@ const useStyles = makeStyles(theme => ({
     justifyContent: 'center',
     flexGrow: 1,
     maxWidth: theme.custom.layout.maxAppWidth,
-    minHeight: `calc(100vh - ${theme.custom.layout.topAppBarHeight}px)`,
     minHeight: '100vh',
-    padding: theme.spacing(4),
+    padding: theme.spacing(2),
     backgroundColor: theme.palette.background.default
   },
   mainPanel: {
