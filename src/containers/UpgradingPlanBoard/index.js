@@ -23,7 +23,7 @@ const UpgradingPlanBoard = () => {
 
   return (
     <div className={classes.root}>
-      <LeftCard className={classes.leftCard} />
+      <LeftCard />
       <RightBoard />
     </div>
   );
